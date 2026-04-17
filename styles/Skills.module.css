@@ -1,64 +1,51 @@
 .skills {
   padding: 100px 0;
-  background: var(--bg-light);
+  background: var(--bg-white);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
+.header {
+  margin-bottom: 48px;
+}
+
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
 }
 
 .subtitle {
-  text-align: center;
   color: var(--text-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 3.5rem;
+  font-size: 1rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 .category {
-  background: var(--bg-white);
+  background: var(--bg-light);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 28px;
-  transition: all 0.3s;
-  box-shadow: var(--shadow-sm);
-}
-
-.category:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.categoryHeader {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 18px;
-}
-
-.icon {
-  font-size: 1.6rem;
+  padding: 24px;
 }
 
 .categoryTitle {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 14px;
 }
 
 .badges {
@@ -68,25 +55,25 @@
 }
 
 .badge {
-  padding: 6px 14px;
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  color: var(--primary);
-  border-radius: 50px;
-  font-size: 0.85rem;
+  padding: 5px 12px;
+  background: var(--bg-white);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.82rem;
   font-weight: 500;
-  transition: all 0.2s;
-  border: 1px solid #bfdbfe;
+  transition: border-color 0.15s;
 }
 
 .badge:hover {
-  background: var(--gradient-primary);
-  color: white;
-  border-color: transparent;
-  transform: translateY(-1px);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .grid { grid-template-columns: 1fr; }
 }

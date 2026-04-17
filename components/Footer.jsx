@@ -7,29 +7,21 @@ export default function Footer() {
     <footer id="footer" className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h3 className={styles.name}>Eduardo Taino</h3>
-          <p className={styles.tagline}>Desenvolvedor Full Stack · Foco em Back-end</p>
+          <p className={styles.name}>Eduardo Taino</p>
+          <p className={styles.tagline}>Desenvolvedor Full Stack — Foco em Back-end</p>
 
           <div className={styles.links}>
-            <a
-              href="https://github.com/Taino-Edu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-            >
+            <a href="https://github.com/Taino-Edu" target="_blank" rel="noopener noreferrer" className={styles.link}>
               GitHub
             </a>
-            <a
-              href="mailto:esusxd0@gmail.com"
-              className={styles.link}
-            >
+            <a href="mailto:esusxd0@gmail.com" className={styles.link}>
               Email
             </a>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <p>© {currentYear} Eduardo Taino · Feito com Next.js 🚀</p>
+          <p>© {currentYear} Eduardo Taino</p>
         </div>
       </div>
     </footer>
